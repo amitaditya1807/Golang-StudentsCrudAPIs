@@ -9,7 +9,7 @@ import (
 )
 
 type HTTPServer struct {
-	Addr string
+	Addr string `yaml:"address" env-required:"true"`
 }
 type Config struct {
 	Env         string `yaml:"env" env:"ENV" env-required:"true"`
@@ -17,7 +17,7 @@ type Config struct {
 	HTTPServer  `yaml:"http_server"`
 }
 
-func MustLoad() *Config{
+func MustLoad() *Config {
 	var configPath string
 
 	configPath = os.Getenv("CONFIG_PATH")
@@ -32,7 +32,7 @@ func MustLoad() *Config{
 			log.Fatal("Config file is not set")
 		}
 
-		if _, err := os.Stat(configPath); os.IsNotExist(err){
+		if _, err := os.Stat(configPath); os.IsNotExist(err) {
 			log.Fatalf("config file does not exist: %s", configPath)
 		}
 	}
@@ -40,7 +40,7 @@ func MustLoad() *Config{
 	var cfg Config
 
 	err := cleanenv.ReadConfig(configPath, &cfg)
-	if err != nil{
+	if err != nil {
 		log.Fatalf("can not read config file: %s", err.Error())
 	}
 
