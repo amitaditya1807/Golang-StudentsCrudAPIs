@@ -1,0 +1,29 @@
+[33mcommit 5500aaf6d9e349abcb43d8ba8d6920c4a63ada90[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: unknown <amit.aditya.1807@gmail.com>
+Date:   Mon Mar 10 20:39:36 2025 +0530
+
+    graceful shutdown
+
+[33mcommit 98d993ad164038faad6e97e15b39d095995b4ee4[m
+Author: unknown <amit.aditya.1807@gmail.com>
+Date:   Mon Mar 10 18:11:05 2025 +0530
+
+    parse config file
+
+[33mcommit ae2708b182fc70406b34e286ac18944c5a0716f1[m
+Author: unknown <amit.aditya.1807@gmail.com>
+Date:   Mon Mar 10 17:42:33 2025 +0530
+
+    add /config file
+
+[33mcommit 30e2962d40618649d3d0402c852f2a0970d16c53[m
+Author: unknown <amit.aditya.1807@gmail.com>
+Date:   Mon Mar 10 17:38:15 2025 +0530
+
+    add config file
+
+[33mcommit b3028b26818e9ee2596f2431cb09ee28d474beb8[m
+Author: unknown <amit.aditya.1807@gmail.com>
+Date:   Mon Mar 10 17:30:53 2025 +0530
+
+    Initial commit
